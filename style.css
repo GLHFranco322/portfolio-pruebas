@@ -12,7 +12,7 @@
 
 body {
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 100vh;
     background-color: #0f0f0f;
     margin: 0 auto;
@@ -118,35 +118,36 @@ header .logo-header {
         align-items: center;
         z-index: 1000000;
     }
-/* 
-    label{
+
+    header{
         position: relative;
-    } */
+    }
 
     .ul-movil {
         padding-top: 6em;
         padding-left: 2em;
-        margin-left: 2em;
         display: flex;
         flex-direction: column;
         gap: 2em;
-        height: calc(100vh - 60px);
+        height: 100vh;
         width: 15em;
         position: absolute;
         font-size: .8em;
         top: 0;
-        left: 45%;
+        left: 0%;
         z-index: -1;
         transition: .5s;
         background-color: rgba(255, 255, 255, .2);
+        li{
+            cursor: pointer;
+        }
     }
-
 
     #nav-desktop {
         display: none;
     }
 
     input[type="checkbox"]:checked~.ul-movil {
-        left: 100%;
+        left: -100%;
     }
 }
